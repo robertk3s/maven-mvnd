@@ -38,7 +38,7 @@ function publishRelease() {
     MVND_PLATFORM=$3
 
     FILE="maven-mvnd-${VERSION}-${MVND_PLATFORM}.zip"
-    URL="https://downloads.apache.org/maven/mvnd/${VERSION}/${FILE}"
+    URL="https://dlcdn.apache.org/maven/mvnd/${VERSION}/${FILE}"
     RESPONSE="$(curl -s -X POST \
         -H "Consumer-Key: ${SDKMAN_CONSUMER_KEY}" \
         -H "Consumer-Token: ${SDKMAN_CONSUMER_TOKEN}" \
@@ -84,7 +84,7 @@ publishRelease ${VERSION} WINDOWS_64 windows-amd64
 #    }
 # " "${RESPONSE}"
 
-RELEASE_URL="https://downloads.apache.org/maven/mvnd/${VERSION}"
+RELEASE_URL="https://dlcdn.apache.org/maven/mvnd/${VERSION}"
 echo "RELEASE_URL = $RELEASE_URL"
 
 RESPONSE="$(curl -s -X POST \

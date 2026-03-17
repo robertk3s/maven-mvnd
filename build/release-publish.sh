@@ -34,5 +34,3 @@ svn move -m "Release Apache Maven Daemon ${VERSION}" \
 # TODO: publish on macports
 # TODO: publish on chocolatey
 # TODO: publish on scoop
-
-popd
